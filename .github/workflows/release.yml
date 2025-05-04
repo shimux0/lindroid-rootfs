@@ -136,7 +136,7 @@ jobs:
           tag: nightly
 
       - name: Download artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           path: lindroid-out
 
@@ -186,7 +186,7 @@ jobs:
 
     steps:
       - name: Download artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: lindroid-out-${{ matrix.config.arch }}-${{ matrix.config.edition }}
           path: lindroid-out
